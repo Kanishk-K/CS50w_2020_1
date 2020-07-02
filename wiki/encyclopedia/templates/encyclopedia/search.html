@@ -8,7 +8,7 @@
     <h1>Search Results</h1>
     <ul>
         {% for entry in similar %}
-            <li><a href="/{{entry}}">{{ entry }}</a></li>
+            <li><a href="/wiki/{{entry}}">{{ entry }}</a></li>
         {% empty %}
             <li>No items present related to your search</li>
         {% endfor %}
