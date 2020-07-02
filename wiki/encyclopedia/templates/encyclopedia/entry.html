@@ -1,0 +1,14 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia
+{% endblock %}
+
+{% block body %}
+    <div>
+        {% autoescape off %}
+            {{ data }}
+        {% endautoescape %}
+    </div>
+    <a href="/edit/{{ selection }}">Edit Page</a>
+{% endblock %}
